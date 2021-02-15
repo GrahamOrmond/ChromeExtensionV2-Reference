@@ -1,0 +1,19 @@
+html, body {
+    width: 400px;
+    height: 200px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 18px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 10px;
+}
