@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Extension Title</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <!-- 
+        multiple pages seperated by divs
+        showing and hiding them to simulate a single page app
+        probably not the way to do it should be using React or something
+        but its good for an example
+     -->
+
+    <!-- login page -->
+    <div id="login_page">
+      <h3>Extension Title</h3>
+      <button id="login_button">Login</button>
+    </div>
+
+    <!-- account page -->
+    <div id="dashboard_page">
+      <h3>Dashboard</h3>
+      <p id="userId"></p>
+      <p id="firstName"></p>
+      <p id="lastName"></p>
+      <p id="email"></p>
+    </div>
+
+    <!-- 
+        LOAD MAIN FILE AND ALL ITS MODULES
+        *prob wouldnt do this in production. instead have one big file with everything inside*
+        *but its nice to seperate it when breaking it down for reference*
+    -->
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/modules/oauth.js"></script>
+    <script type="text/javascript" src="js/modules/dashboard.js"></script>
+    
+    <!-- this file here will control all the module actions and setup listeners -->
+    <script type="text/javascript" src="js/controller.js"></script>
+  </body>
+</html>

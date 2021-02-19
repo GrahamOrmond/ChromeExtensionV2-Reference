@@ -1,0 +1,23 @@
+{
+  "name": "OAuth Tutorial",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkjEio2sGD+jETHduGKYiRoUgWNsiIW2ZSp6cUzXGTEtqkfDyYSl2AsNtYOplg7RE0wqsNNc1cea0q6i5yL0dAJPgcj4M3S+XD5GIfAjUHHINyPaDsLMgkr4xT2yxHBkYCGSio/DBdAHoVqrCFun4oAqPav3/3P0PC/8yL53Fbg5oLhA6EgAwrb+vQ6zr+n9FUyJy8rT5KRd7xv8bkLRN3sWV945uXjLMi0bU8i+I06NQIuXlRMshiqmsTw2J+doEJIQjAHS3SNBJtE/nFEYbIpwZjN1Ta5dfZdX408efTb2MDQNMbtpFdlSTf3Nk72/tcoZMmZkFau3lG4VsqYekbwIDAQAB",
+  "version": "1.0",
+  "description": "Uses OAuth to get access tokens and make api calls",
+  "manifest_version": 2,
+  "permissions": [
+      "storage",
+      "identity",
+      "webRequest",
+      "*://localhost:*/"
+  ],
+  "browser_action": {
+    "default_title": "OAuth Tutorial",
+    "default_popup": "popup/index.html"
+  },
+  "background": {
+    "scripts": [
+      "background/background.js"
+    ],
+    "persistent": true
+  }
+}
